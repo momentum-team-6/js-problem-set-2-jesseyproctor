@@ -2,16 +2,44 @@
 // member of the array, and returns a new array with that member removed.
 // For example, `remove(['Cadence', 'Ordel', 'Marion'], 'Marion')` results
 // in `['Cadence', 'Ordel']`.
-//
+let bastards = [ 'Mitch', 'Bill', 'Donald' ];
+function remove (array, name) {
+    // let indexPosition = array.indexOf(name);
+    // if (indexPosition > -1){
+    //     array.splice (indexPosition,1);
+    // }
+    let filterWords = array.filter(function (word) {
+       return word !== name;
+    })
+        return filterWords; 
+}
+
+remove(bastards, 'Donald');
+
+// let bastards = [ 'Mitch', 'Bill', 'Donald' ]
+// let filterWords = []
+
+// for (let word of name) {
+//   if (word !== name) {
+//     filterWords.push(name)
+//   }
+//   return filterWords
+// }
+
 // If the potential member is not in the array, return the array unchanged.
 // If the potential member is in the array, remove all instances of it from the array.
 
 // 2. Revisit your "remove" function. Make sure that it does not change the original
 // array but instead returns a new array.
 
+//accomplished in part one with "return filterWords" (instead of return bastards)
+
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
-
+// function sum (array, total) {
+    
+// }
+//     return total
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
 

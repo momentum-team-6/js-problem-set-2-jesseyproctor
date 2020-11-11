@@ -2,29 +2,21 @@
 // member of the array, and returns a new array with that member removed.
 // For example, `remove(['Cadence', 'Ordel', 'Marion'], 'Marion')` results
 // in `['Cadence', 'Ordel']`.
-let bastards = [ 'Mitch', 'Bill', 'Donald' ];
+
+let bastards = [ 'Mitch', 'Bill', 'Donald' ]
 function remove (array, name) {
     // let indexPosition = array.indexOf(name);
     // if (indexPosition > -1){
     //     array.splice (indexPosition,1);
     // }
     let filterWords = array.filter(function (word) {
-       return word !== name;
+       return word !== name
     })
-        return filterWords; 
+        return filterWords 
 }
-
+ 
 remove(bastards, 'Donald');
 
-// let bastards = [ 'Mitch', 'Bill', 'Donald' ]
-// let filterWords = []
-
-// for (let word of name) {
-//   if (word !== name) {
-//     filterWords.push(name)
-//   }
-//   return filterWords
-// }
 
 // If the potential member is not in the array, return the array unchanged.
 // If the potential member is in the array, remove all instances of it from the array.
@@ -36,15 +28,57 @@ remove(bastards, 'Donald');
 
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
-// function sum (array, total) {
-    
-// }
-//     return total
+
+let listOfNumbers = [1, 2, 3, 4]
+
+function sum(numbers) {
+    let total = 0
+    for (let number of numbers) {
+        total += number
+    }
+    return total
+}
+
+
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
+   
+//what is the sum of the numbers?
+//what is the length of the array?
+//divide the sum by the length for the average.
+
+// let listOfNumbers = [1, 2, 3, 4]
+
+// let count = listOfNumbers.length
+
+// function sum(numbers) {
+//     let total = 0
+//     for (let number of numbers) {
+//         total += number
+//     }
+//     return total
+// }
+
+// let avg = sum/listOfNumbers.length
+
+
+
+
+
 
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
+
+function minimum (nums) {
+    let minNum 
+    for (let num of nums) {
+        if (num < minNum || minNum === undefined) {
+            minNum = num
+        }
+    } 
+    return minNum 
+}
+
 
 // 6. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to

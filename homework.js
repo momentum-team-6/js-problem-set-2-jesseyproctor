@@ -58,6 +58,14 @@ function sum(numbers) {
 //     }
 //     return total
 // }
+// write a funtion containing if else method that looks something like:
+        if (listOfNumbers.length.0) {
+            avg = sum (listOfNumbers)/(listOfNumbers.length)
+        }
+        else {
+           avg = undefined     
+        }
+        return avg
 
 // let avg = sum/listOfNumbers.length
 
@@ -70,7 +78,7 @@ function sum(numbers) {
 // returns the smallest number in that array.
 
 function minimum (nums) {
-    let minNum 
+    let minNum //value automatically set to undefined 
     for (let num of nums) {
         if (num < minNum || minNum === undefined) {
             minNum = num
